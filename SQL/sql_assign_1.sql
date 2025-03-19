@@ -1,5 +1,5 @@
-use AdventureWorks2019
-go
+USE AdventureWorks2019
+GO
 
 
 
@@ -34,7 +34,7 @@ WHERE Color IS NOT NULL AND ListPrice > 0
 
 -- 6) Write a query that concatenates the columns Name and Color from the Production.Product table by excluding the rows that are null for color.
 
-SELECT Name + ' ' + Color as NewColumn
+SELECT Name + ' ' + Color AS NewColumn
 FROM Production.Product
 WHERE Color IS NOT NULL;
 
@@ -54,7 +54,7 @@ WHERE Color IN ('Black', 'Silver')
 
 SELECT ProductID, Name
 FROM Production.Product
-WHERE ProductID BETWEEN 400 and 500
+WHERE ProductID BETWEEN 400 AND 500
 ORDER BY ProductID
 
 -- 9) Write a query to retrieve the to the columns  ProductID, Name and color from the Production.Product table restricted to the colors black and blue
@@ -105,6 +105,6 @@ ORDER BY NAME
 
 -- 14) Write a query that retrieves unique colors from the table Production.Product. Order the results  in descending  manner.
 
-SELECT DISTINCT Color as UniqueColors
+SELECT DISTINCT Color AS UniqueColors
 FROM Production.Product
 ORDER BY UniqueColors DESC
