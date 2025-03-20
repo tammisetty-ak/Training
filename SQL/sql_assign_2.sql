@@ -71,13 +71,11 @@ WHERE dt.TheSum < 100
 
 -- 7. Write a query to list the sum of products with the shelf information in the Production.ProductInventory table and LocationID set to 40 and limit the result to include just summarized quantities less than 100
 
-SELECT dt.Shelf, dt.ProductID, dt.TheSum
-FROM (SELECT pi.Shelf, pi.ProductID, SUM(pi.Quantity) AS TheSum
+SELECT pi.Shelf, pi.ProductID, SUM(pi.Quantity) AS TheSum
 FROM Production.ProductInventory pi
 WHERE pi.LocationID = 40
 GROUP BY pi.ProductID, pi.Shelf
-) dt
-WHERE dt.TheSum < 100
+HAVING SUM(pi.Quantity) < 100
 
 
 -- 8. Write the query to list the average quantity for products where column LocationID has the value of 10 from the table Production.ProductInventory table.
