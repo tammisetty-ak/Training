@@ -1,0 +1,87 @@
+Test your Knowledge
+1. What type would you choose for the following “numbers”?
+    A person’s telephone number
+        String
+    A person’s height
+        unsigned double
+    A person’s age
+        unsigned short
+    A person’s gender (Male, Female, Prefer Not To Answer)
+        Enum
+    A person’s salary
+        long
+    A book’s ISBN
+        string
+    A book’s price
+        int
+    A book’s shipping weight
+        int
+    A country’s population
+        long
+    The number of stars in the universe
+        long
+    The number of employees in each of the small or medium businesses in the
+    United Kingdom (up to about 50,000 employees per business)
+        long
+2. What are the difference between value type and reference type variables? What is
+boxing and unboxing?
+    1. Value Type variable - holds values directly, present in stack memory, no garbage collection
+    2. Reference Type - holds ref/ address of variables, present in heap memory, garbage collection
+    
+3. What is meant by the terms managed resource and unmanaged resource in .NET
+    1.Managed Resources - organised by garbage collector. no need to explicitly delete call methods for resource deletion 
+    2.Unmanaged Resources - not organised. need to Call Dispose() from IDisposable interface for freeing.
+
+4. Whats the purpose of Garbage Collector in .NET?
+    process of reclaiming memory occupied by objects that are no longer in use
+    
+Controlling Flow and Converting Types
+Test your Knowledge
+1. What happens when you divide an int variable by 0?
+    System.DivideByZeroException: Attempted to divide by zero.
+
+2. What happens when you divide a double variable by 0?
+    ∞
+    
+3. What happens when you overflow an int variable, that is, set it to a value beyond its
+range?
+    the value wraps around to the minimum value
+4. What is the difference between x = y++; and x = ++y;?
+    x = y++ , x is assigned to y value and y is incremented by 1 after the operation
+    x = ++y , x is assigned to 1 + y value. i.e, y is incremented before the operation
+    
+5. What is the difference between break, continue, and return when used inside a loop
+statement?
+    break - exit from the loop and exec rest of the program after the loop
+    continue - skip the current iteration and start with the next iteration
+    return - exit from the method or function executing.
+    
+6. What are the three parts of a for statement and which of them are required?
+    for(initialisation; conditional check; updation)
+
+7. What is the difference between the = and == operators?
+    = , assigning rhs value to lhs
+    == , checking if rhs is equal to lhs
+    
+8. Does the following statement compile? for ( ; true; ) ;
+    yes, it is an infinte loop
+    
+9. What does the underscore _ represent in a switch expression?
+    default option
+    
+10. What interface must an object implement to be enumerated over by using the foreach
+statement?
+    IEnumerable interface
+    
+    
+fizzbuzz problem
+
+int max = 500;
+for (byte i = 0; i < max; i++)
+{
+WriteLine(i);
+}
+
+byte overflow is happening since byte range is 0 - 255 at 256 byte again wraps to become 0. causing an infinte loop
+we can add a try catch block to warn in case of overflow
+
