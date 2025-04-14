@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      .table-container {
+        width: fit-content;
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      thead th {
+        border: 1px solid black;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24pt;
+      }
+
+      .column-titles {
+        font-weight: bold;
+      }
+
+      td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .number-box {
+        width: 50px;
+      }
+
+      .avg-row td {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="4">Web fundamentals exam results</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="column-titles">
+            <td class="number-box">No</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Score</td>
+          </tr>
+          <tr>
+            <td class="number-box">01</td>
+            <td>Gosho</td>
+            <td>Goshev</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td class="number-box">02</td>
+            <td>Tosho</td>
+            <td>Toshev</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td class="number-box">03</td>
+            <td>Posho</td>
+            <td>Poshev</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td class="number-box">04</td>
+            <td>Gencho</td>
+            <td>Genchev</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td class="number-box">05</td>
+            <td>Draga</td>
+            <td>Draganova</td>
+            <td>500</td>
+          </tr>
+          <tr class="avg-row">
+            <td colspan="4">Average score from 05 participants: 500</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
