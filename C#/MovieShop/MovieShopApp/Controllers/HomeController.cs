@@ -25,14 +25,17 @@ public class HomeController : Controller
         ViewData["Genres"] = genres;
         return View();
     }
-    
-    public IActionResult Index()
+
+    public IActionResult Home([FromQuery(Name = "page")] int pageNumber = 1, int pageSize = 10)
     {
-        ViewData["Genres"] = _genreService.GetAllGenres(); // Critical
-        ViewData["Message"] = "Your application description page.";
-        var movies = _movieService.Top20GrossingMovies();
+        var movies = _movieService.GetAllMoviesPaged(pageNumber, pageSize);
+        ViewBag.CurrentPage = pageNumber;
+        ViewBag.PageSize = pageSize;
+        ViewBag.TotalItems = movies.TotalItems;
+        ViewBag.TotalPages = (int)Math.Ceiling((double)movies.TotalItems / movies.PageSize);
         return View(movies);
     }
+    
 
     public IActionResult Privacy()
     {

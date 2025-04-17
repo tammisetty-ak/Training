@@ -1,3 +1,4 @@
+using MovieShopApp.Models;
 using MovieShopCore.Contracts.Repositories;
 using MovieShopCore.Contracts.Services;
 using MovieShopCore.Entities;
@@ -68,5 +69,42 @@ public class MovieService: IMovieService
                 .ToList()
         };
         return movieDetailModel;
+    }
+    
+
+    public List<MovieCardModel> getAllMovies()
+    {
+        var movies = _movieRepository.GetAll();
+        var movieCardModels = new List<MovieCardModel>();
+        foreach (var movie in movies)
+        {
+            movieCardModels.Add(new MovieCardModel()
+            {
+                Id = movie.Id,
+                Title = movie.Title,
+                PosterURL = movie.PosterUrl,
+            });
+        }
+        return movieCardModels;
+    }
+
+    public PagedResultModel<MovieCardModel> GetAllMoviesPaged(int pageNumber, int pageSize)
+    {
+        var movies = _movieRepository.GetPagedMovies(pageNumber, pageSize);
+        var movieCardModels = movies.Items
+            .Select(m => new MovieCardModel {
+                Id        = m.Id,
+                Title     = m.Title,
+                PosterURL = m.PosterUrl
+            })
+            .ToList();
+
+        return new PagedResultModel<MovieCardModel>
+        {
+            Items       = movieCardModels,
+            CurrentPage = movies.CurrentPage,
+            PageSize    = movies.PageSize,
+            TotalItems  = movies.TotalItems   
+        };
     }
 }

@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using MovieShopApp.Models;
 using MovieShopCore.Contracts.Repositories;
 using MovieShopCore.Entities;
 using MovieShopInfrastructure.Data;
@@ -16,7 +17,7 @@ public class MovieRepository : BaseRepository<Movie>, IMovieRepository
         var movies = _dbContext.Movies.OrderByDescending(m => m.Revenue).Take(20);
         return movies;
     }
-
+    
     public Movie GetMovieById(int id)
     {
         var movie = _dbContext.Movies
@@ -26,4 +27,25 @@ public class MovieRepository : BaseRepository<Movie>, IMovieRepository
         
         return movie;
     }
+
+    public PagedResultModel<Movie> GetPagedMovies(int pageNumber, int pageSize)
+    {
+        var query = _dbContext.Movies.AsNoTracking();
+        
+        var total = query.Count();
+
+        var movies = query
+            .OrderBy(m => m.Id)
+            .Skip((pageNumber - 1) * pageSize)
+            .Take(pageSize)
+            .ToList();
+        
+        return new PagedResultModel<Movie> {
+            Items       = movies,
+            CurrentPage = pageNumber,
+            PageSize    = pageSize,
+            TotalItems  = total
+        };
+    }
+
 }
