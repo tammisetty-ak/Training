@@ -17,9 +17,9 @@ public class CastController : Controller
         return View();
     }
 
-    // public IActionResult GetCastDetails(int id)
-    // {
-    //     var castDetailsModel = _castService.GetAllCastByMovieId(id);
-    //     return View(castDetailsModel);
-    // }
+    public IActionResult GetCastDetails(int id)
+    {
+        var castDetailsModel = _castService.GetCastById(id);
+        return View(castDetailsModel);
+    }
 }

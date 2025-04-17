@@ -13,4 +13,6 @@ public class MovieDetailsModel
     public string Overview { get; set; }
     public string TagLine { get; set; }
     public string TmdbUrl { get; set; }
+    
+    public IEnumerable<MovieCastModel> MovieCastModels { get; set; }
 }
