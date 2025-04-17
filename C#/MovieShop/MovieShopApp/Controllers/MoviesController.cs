@@ -6,10 +6,13 @@ namespace MovieShopApp.Controllers;
 public class MoviesController : Controller
 {
     private readonly IMovieService _movieService;
+    
+    private readonly ICastService _castService;
 
-    public MoviesController(IMovieService movieService)
+    public MoviesController(IMovieService movieService, ICastService castService)
     {
         _movieService = movieService;
+        _castService = castService;
     }
     
     // Details

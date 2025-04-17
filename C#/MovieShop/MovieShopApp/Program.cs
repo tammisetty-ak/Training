@@ -17,6 +17,10 @@ builder.Services.AddScoped<IRepository<Genre>, BaseRepository<Genre>>();
 
 builder.Services.AddScoped<IGenreService, GenreService>();
 
+builder.Services.AddScoped<ICastService, CastService>();
+
+builder.Services.AddScoped<ICastRepository, CastRepository>();
+
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 
 builder.Services.AddDbContext<MovieShopDbContext>(options =>

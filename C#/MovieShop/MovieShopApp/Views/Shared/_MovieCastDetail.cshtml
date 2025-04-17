@@ -1,0 +1,20 @@
+@model IEnumerable<MovieShopCore.Models.MovieCastModel>
+
+@* http://localhost:5128/movies/details/2 *@
+<div class="rounded">
+    <div class="container-fluid">
+        <div class="row">
+            @foreach (var movieCastModel in Model)
+            {
+                <div class="col-xs-2 col-lg-4 col-md-2 col-6 mb-4 p-4">
+                    <div class="col">
+                        <partial name = "_CastDetail" model="@movieCastModel.CastModel"/>
+                    </div>
+                    <div class="col">
+                        <strong>@movieCastModel.Character</strong>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

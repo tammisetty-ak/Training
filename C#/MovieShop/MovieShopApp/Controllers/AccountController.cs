@@ -15,7 +15,6 @@ public class AccountController : Controller
         return View();
     }
 
-    [HttpPost]
     public IActionResult Register()
     {
         return View();

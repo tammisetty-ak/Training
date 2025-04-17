@@ -1,0 +1,14 @@
+@model MovieShopCore.Models.CastModel
+
+<div class="col-12 mb-3 p-0">  <!-- Full width container -->
+    <div class="d-flex align-items-center">  <!-- Flex container -->
+        <div class="me-3">  <!-- Image container -->
+            <img src="@Model.ProfilePath"
+                 class="rounded-circle"
+                 style="width: 50px; height: 50px; object-fit: cover; border: 2px solid #ddd;">
+        </div>
+        <div>  <!-- Name container -->
+            <strong class="text-truncate d-block">@Model.Name</strong>
+        </div>
+    </div>
+</div>

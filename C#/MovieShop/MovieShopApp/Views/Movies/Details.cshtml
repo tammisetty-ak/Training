@@ -18,6 +18,9 @@
                 <strong>Budget: </strong>@Model.Budget.ToString(format:"C")
                 <strong>Box Office: </strong>@Model.Revenue.ToString(format:"C")
             </p>
+            <div class="justify-content-center mt-3">
+                <partial name = "_MovieCastDetail" model="@Model.MovieCastModels"/>
+            </div>
         </div>
     </div>
 </div>
