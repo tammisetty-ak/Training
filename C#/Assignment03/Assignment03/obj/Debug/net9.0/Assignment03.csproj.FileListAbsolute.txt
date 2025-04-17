@@ -1,0 +1,15 @@
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Assignment03/Assignment03/bin/Debug/net9.0/Assignment03
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Assignment03/Assignment03/bin/Debug/net9.0/Assignment03.deps.json
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Assignment03/Assignment03/bin/Debug/net9.0/Assignment03.runtimeconfig.json
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Assignment03/Assignment03/bin/Debug/net9.0/Assignment03.dll
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Assignment03/Assignment03/bin/Debug/net9.0/Assignment03.pdb
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Assignment03/Assignment03/obj/Debug/net9.0/Assignment03.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Assignment03/Assignment03/obj/Debug/net9.0/Assignment03.AssemblyInfoInputs.cache
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Assignment03/Assignment03/obj/Debug/net9.0/Assignment03.AssemblyInfo.cs
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Assignment03/Assignment03/obj/Debug/net9.0/Assignment03.csproj.CoreCompileInputs.cache
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Assignment03/Assignment03/obj/Debug/net9.0/Assignment03.sourcelink.json
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Assignment03/Assignment03/obj/Debug/net9.0/Assignment03.dll
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Assignment03/Assignment03/obj/Debug/net9.0/refint/Assignment03.dll
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Assignment03/Assignment03/obj/Debug/net9.0/Assignment03.pdb
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Assignment03/Assignment03/obj/Debug/net9.0/Assignment03.genruntimeconfig.cache
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Assignment03/Assignment03/obj/Debug/net9.0/ref/Assignment03.dll

@@ -1,0 +1,13 @@
+﻿@model IEnumerable<MovieShopCore.Models.MovieCardModel>
+
+@* http://localhost:5128/movies/details/2 *@
+<div class="rounded">
+    <div class="container-fluid">
+        <div class="row">
+        @foreach (var movie in Model)
+        {
+            <partial name = "_MovieCard" model="movie"/>
+        }
+        </div>
+    </div>
+</div>

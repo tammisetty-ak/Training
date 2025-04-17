@@ -1,0 +1,7 @@
+@model IEnumerable<MovieShopCore.Models.GenreModel>
+<ul class="dropdown-menu">
+    @foreach (var genre in Model)
+    {
+        <li><a class="dropdown-item" href="#">@genre.Name</a></li>
+    }
+</ul>

@@ -1,0 +1,12 @@
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/MovieShop/MovieShopCore/bin/Debug/net9.0/MovieShopCore.deps.json
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/MovieShop/MovieShopCore/bin/Debug/net9.0/MovieShopCore.dll
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/MovieShop/MovieShopCore/bin/Debug/net9.0/MovieShopCore.pdb
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/MovieShop/MovieShopCore/obj/Debug/net9.0/MovieShopCore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/MovieShop/MovieShopCore/obj/Debug/net9.0/MovieShopCore.AssemblyInfoInputs.cache
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/MovieShop/MovieShopCore/obj/Debug/net9.0/MovieShopCore.AssemblyInfo.cs
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/MovieShop/MovieShopCore/obj/Debug/net9.0/MovieShopCore.csproj.CoreCompileInputs.cache
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/MovieShop/MovieShopCore/obj/Debug/net9.0/MovieShopCore.sourcelink.json
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/MovieShop/MovieShopCore/obj/Debug/net9.0/MovieShopCore.dll
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/MovieShop/MovieShopCore/obj/Debug/net9.0/refint/MovieShopCore.dll
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/MovieShop/MovieShopCore/obj/Debug/net9.0/MovieShopCore.pdb
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/MovieShop/MovieShopCore/obj/Debug/net9.0/ref/MovieShopCore.dll
