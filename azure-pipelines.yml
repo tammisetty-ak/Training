@@ -12,7 +12,9 @@ trigger:
       - C#/MovieShop/**
 
 pool:
-  vmImage: 'windows-latest'
+  name: Default        # or whatever pool you used
+  demands: 
+    - agent.os -equals Windows_NT
 
 variables:
   buildConfiguration: 'Release'
