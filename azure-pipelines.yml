@@ -1,0 +1,39 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - C#/MovieShop/**
+
+pool:
+  name: Default        # or whatever pool you used
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '9.0.x'  # or your project version
+
+- script: |
+    cd "C#/MovieShop"
+    dotnet restore
+  displayName: 'Restore dependencies'
+
+- script: |
+    cd "C#/MovieShop"
+    dotnet build --configuration $(buildConfiguration)
+  displayName: 'Build'
+
+- script: |
+    cd "C#/MovieShop"
+    dotnet test --configuration $(buildConfiguration) --no-build
+  displayName: 'Test'
