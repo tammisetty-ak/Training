@@ -4,14 +4,36 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
 trigger:
-- main
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - C#/MovieShop/**
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'windows-latest'
 
 variables:
   buildConfiguration: 'Release'
 
 steps:
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '9.0.x'  # or your project version
+
+- script: |
+    cd "C#/MovieShop"
+    dotnet restore
+  displayName: 'Restore dependencies'
+
+- script: |
+    cd "C#/MovieShop"
+    dotnet build --configuration $(buildConfiguration)
+  displayName: 'Build'
+
+- script: |
+    cd "C#/MovieShop"
+    dotnet test --configuration $(buildConfiguration) --no-build
+  displayName: 'Test'
