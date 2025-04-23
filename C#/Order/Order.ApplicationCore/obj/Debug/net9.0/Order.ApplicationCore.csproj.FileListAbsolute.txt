@@ -1,0 +1,15 @@
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Order/Order.ApplicationCore/bin/Debug/net9.0/Order.ApplicationCore.deps.json
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Order/Order.ApplicationCore/bin/Debug/net9.0/Order.ApplicationCore.runtimeconfig.json
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Order/Order.ApplicationCore/bin/Debug/net9.0/Order.ApplicationCore.dll
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Order/Order.ApplicationCore/bin/Debug/net9.0/Order.ApplicationCore.pdb
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Order/Order.ApplicationCore/obj/Debug/net9.0/Order.ApplicationCore.csproj.AssemblyReference.cache
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Order/Order.ApplicationCore/obj/Debug/net9.0/Order.ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Order/Order.ApplicationCore/obj/Debug/net9.0/Order.ApplicationCore.AssemblyInfoInputs.cache
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Order/Order.ApplicationCore/obj/Debug/net9.0/Order.ApplicationCore.AssemblyInfo.cs
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Order/Order.ApplicationCore/obj/Debug/net9.0/Order.ApplicationCore.csproj.CoreCompileInputs.cache
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Order/Order.ApplicationCore/obj/Debug/net9.0/Order.ApplicationCore.sourcelink.json
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Order/Order.ApplicationCore/obj/Debug/net9.0/Order.ApplicationCore.dll
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Order/Order.ApplicationCore/obj/Debug/net9.0/refint/Order.ApplicationCore.dll
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Order/Order.ApplicationCore/obj/Debug/net9.0/Order.ApplicationCore.pdb
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Order/Order.ApplicationCore/obj/Debug/net9.0/Order.ApplicationCore.genruntimeconfig.cache
+/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Order/Order.ApplicationCore/obj/Debug/net9.0/ref/Order.ApplicationCore.dll

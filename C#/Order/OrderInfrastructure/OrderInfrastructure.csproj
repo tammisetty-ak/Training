@@ -8,12 +8,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Data\" />
-      <Folder Include="Repositories\" />
-      <Folder Include="Services\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.4">
         <PrivateAssets>all</PrivateAssets>
@@ -24,6 +18,10 @@
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Order.ApplicationCore\Order.ApplicationCore.csproj" />
     </ItemGroup>
 
 </Project>

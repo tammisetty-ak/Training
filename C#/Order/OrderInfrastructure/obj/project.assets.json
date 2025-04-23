@@ -1598,6 +1598,20 @@
             "rid": "win"
           }
         }
+      },
+      "Order.ApplicationCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.4"
+        },
+        "compile": {
+          "bin/placeholder/Order.ApplicationCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Order.ApplicationCore.dll": {}
+        }
       }
     }
   },
@@ -4701,6 +4715,11 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Order.ApplicationCore/1.0.0": {
+      "type": "project",
+      "path": "../Order.ApplicationCore/Order.ApplicationCore.csproj",
+      "msbuildProject": "../Order.ApplicationCore/Order.ApplicationCore.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4708,7 +4727,8 @@
       "Microsoft.EntityFrameworkCore >= 9.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.4",
-      "Microsoft.EntityFrameworkCore.Tools >= 9.0.4"
+      "Microsoft.EntityFrameworkCore.Tools >= 9.0.4",
+      "Order.ApplicationCore >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4735,7 +4755,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Order/Order.ApplicationCore/Order.ApplicationCore.csproj": {
+              "projectPath": "/Users/sivatammisetty/Downloads/Antra training/Assignments/Training/C#/Order/Order.ApplicationCore/Order.ApplicationCore.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
