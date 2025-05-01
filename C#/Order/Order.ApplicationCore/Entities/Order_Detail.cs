@@ -15,7 +15,10 @@ public class Order_Detail
     [Required]
     public int Quantity { get; set; }
     [Required]
+    [Column(TypeName = "decimal(5,2)")]
     public decimal Price { get; set; }
+    
+    [Column(TypeName = "decimal(5,2)")]
     public decimal Discount { get; set; }
     
     public int OrderId { get; set; }

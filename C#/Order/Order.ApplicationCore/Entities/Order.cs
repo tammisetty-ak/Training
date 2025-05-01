@@ -25,6 +25,7 @@ public class Order
     [Column(TypeName = "varchar(50)")]
     public string ShippingMethod { get; set; } = string.Empty;
     [Required]
+    [Column(TypeName = "decimal(5,2)")]
     public decimal BillAmount { get; set; }
     [Required]
     public string Order_Status { get; set; } = string.Empty;

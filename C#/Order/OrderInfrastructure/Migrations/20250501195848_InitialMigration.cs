@@ -15,7 +15,8 @@ namespace Infrastructure.Migrations
                 name: "Orders",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Order_Date = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CustomerId = table.Column<int>(type: "int", nullable: false),
                     CustomerName = table.Column<string>(type: "varchar(50)", nullable: false),
@@ -23,7 +24,7 @@ namespace Infrastructure.Migrations
                     PaymentMethodName = table.Column<string>(type: "varchar(30)", nullable: false),
                     ShippingMethodAddress = table.Column<string>(type: "varchar(100)", nullable: false),
                     ShippingMethod = table.Column<string>(type: "varchar(50)", nullable: false),
-                    BillAmount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    BillAmount = table.Column<decimal>(type: "decimal(5,2)", nullable: false),
                     Order_Status = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -40,25 +41,25 @@ namespace Infrastructure.Migrations
                     Product_Id = table.Column<int>(type: "int", nullable: false),
                     Product_name = table.Column<string>(type: "varchar(40)", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false),
-                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    Discount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    OrderId = table.Column<int>(type: "int", nullable: false),
-                    OrderId1 = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                    Price = table.Column<decimal>(type: "decimal(5,2)", nullable: false),
+                    Discount = table.Column<decimal>(type: "decimal(5,2)", nullable: false),
+                    OrderId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Order_Details", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Order_Details_Orders_OrderId1",
-                        column: x => x.OrderId1,
+                        name: "FK_Order_Details_Orders_OrderId",
+                        column: x => x.OrderId,
                         principalTable: "Orders",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Order_Details_OrderId1",
+                name: "IX_Order_Details_OrderId",
                 table: "Order_Details",
-                column: "OrderId1");
+                column: "OrderId");
         }
 
         /// <inheritdoc />
