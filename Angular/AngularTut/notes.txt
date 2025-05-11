@@ -1,0 +1,13 @@
+Similarities between C# and Angular
+
+Controller      Components
+Views           Templates
+Attributes      Attributes
+Services        Services
+DI              DI
+Routing         Routing
+Filters         Guards
+Middleware      Interceptor
+C#              Typescript
+
+
